@@ -10,7 +10,7 @@ Son interfaces que implementamos mediante una clase anónima.
 
 Ejemplo de interface funcional Comparator.
 
-`
+```
 Collections.sort(lista, new Comparator<String>() {
 
     //Ordenamos la cadena por su longitud
@@ -19,13 +19,14 @@ Collections.sort(lista, new Comparator<String>() {
         return str1.length()-str2.length();
     }
 
-});`
+});
+```
 
 Java 8 añade la anotación **@FunctionalInterface** que permite al compilador comprobar si la interfaz cumple con las caracteristicas de funcional.
 
 Ejemplo:
 
-`
+```
 @FunctionalInterface
 public interface InterfazFuncional {
 	
@@ -40,5 +41,5 @@ public interface InterfazFuncional {
 	static void estatico() {
 		System.out.println("Metodo estatico");
 	}
-
-}`
+}
+```
