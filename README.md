@@ -19,3 +19,25 @@ Collections.sort(lista, new Comparator<String>() {
     }
 
 });
+
+Java 8 añade la anotación @FunctionalInterface que permite al compilador comprobar si la interfaz cumple con las caracteristicas de funcional.
+
+Ejemplo:
+
+
+@FunctionalInterface
+public interface InterfazFuncional {
+	
+	void imprimir(String str);
+	
+	boolean equals(Object o);
+	
+	default void defecto() {
+		System.out.println("Metodo por defecto");
+	}
+	
+	static void estatico() {
+		System.out.println("Metodo estatico");
+	}
+
+}
