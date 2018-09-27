@@ -2,14 +2,15 @@
 
 Son interfaces que implementamos mediante una clase anónima.
 
-Caracteristicas
+**Caracteristicas**
 
--Solamente tenga la definición de un método abstracto.
+- Solamente tenga la definición de un método abstracto.
 
--Pueden tener uno o varios métodos por defecto o estáticos. 
+- Pueden tener uno o varios métodos por defecto o estáticos. 
 
 Ejemplo de interface funcional Comparator.
 
+`
 Collections.sort(lista, new Comparator<String>() {
 
     //Ordenamos la cadena por su longitud
@@ -18,13 +19,13 @@ Collections.sort(lista, new Comparator<String>() {
         return str1.length()-str2.length();
     }
 
-});
+});`
 
-Java 8 añade la anotación @FunctionalInterface que permite al compilador comprobar si la interfaz cumple con las caracteristicas de funcional.
+Java 8 añade la anotación **@FunctionalInterface** que permite al compilador comprobar si la interfaz cumple con las caracteristicas de funcional.
 
 Ejemplo:
 
-
+`
 @FunctionalInterface
 public interface InterfazFuncional {
 	
@@ -40,4 +41,4 @@ public interface InterfazFuncional {
 		System.out.println("Metodo estatico");
 	}
 
-}
+}`
