@@ -26,7 +26,7 @@ En el caso de que vayamos a utilizar un stream de tipos básicos ( int , long y 
 - Arrays.streams(T[] t) : retorna un stream secuencial a partir del array proporcionado. Si el array es de tipo básico, se retorna un subtipo de Stream .
 - Stream.empty() : retorna un stream vacío.
 -Stream.iterate(T, UnaryOperator<T>) : devuelve un stream infinito, ordenado y secuencial. Lo hace a partir de un valor y de aplicar una función a ese valor. Se puede limitar el tamaño con limit(long) .
--Collection.stream() y Collection.parallelStream() : devuelve un stream (secuencial o paralelo) a partir de una colección.
+- Collection.stream() y Collection.parallelStream() : devuelve un stream (secuencial o paralelo) a partir de una colección.
 - Collection.generate : retorna un stream infinito, secuencial y no ordenado a partir de una instancia de Supplier (o su correspondiente expresión lambda).
   
 **Operaciones intermedias**
